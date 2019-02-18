@@ -1,0 +1,14 @@
+REPL
+    R - Read
+    E - Evaluate
+    R - Print
+    L - Loop
+
+The 'node' command prompt behaves as above
+
+MVC - Model, View, Controller
+
+Node.js cannot perform DOM (Document Object Model) or BOM (Browser Object Model) operations
+
+create-react-app is the package being used for installing react using the following command:
+npm i -g create-react-app
