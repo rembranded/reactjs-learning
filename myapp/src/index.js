@@ -7,6 +7,9 @@ import Clock from './Clock';
 import ArrayDemo from './ArrayDemo';
 import Container from './Container';
 import AxiosDemo from './AxiosDemo';
+import RoutingDemo from './RoutingDemo';
+import FormsDemo from './FormsDemo';
+import ReduxDemo from './ReduxDemo';
 
 // DOM substitution
 ReactDOM.render(<h1 className = "heading">Hello, World!</h1>, document.getElementById('root'));
@@ -42,7 +45,12 @@ ReactDOM.render(<Container />, document.getElementById('div8'));
 
 ReactDOM.render(<AxiosDemo />, document.getElementById('div9'));
 
-// ReactDOM.render(<App />, document.getElementById('root'));
+// ReactDOM.render(<RoutingDemo />, document.getElementById('div10'));
+
+ReactDOM.render(<FormsDemo />, document.getElementById('div10'));
+
+ReactDOM.render(<ReduxDemo />, document.getElementById('div11'));
+
 
 // If you want your app to work offline and load faster, you can change
 // unregister() to register() below. Note this comes with some pitfalls.

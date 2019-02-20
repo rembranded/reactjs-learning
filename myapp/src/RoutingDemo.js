@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
 import {Link} from 'react-router-dom';
 
-const Home = () => {
+const Home = () => class extends Component {
   render() {
     return (
       <div>
@@ -11,7 +11,7 @@ const Home = () => {
   }
 }
 
-const About = () => {
+const About = () => class extends Component{
     render() {
       return (
         <div>
@@ -23,9 +23,11 @@ const About = () => {
 
 export default class RoutingDemo extends Component {
     render() {
+      return (
         <div>
             <Link to='/home'>Home</Link>
             <Link to='/about'>About</Link>
         </div>
+      )
     }
 }

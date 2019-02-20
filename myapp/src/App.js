@@ -1,7 +1,8 @@
 import React, { Component } from 'react';
 import './App.css';
 import Student from './Student';
-import RoutingDemo from './RoutingDemo';
+import BrowserRouter, { Route } from 'react-router-dom';
+// import { Home , About } from 'RoutingDemo';
 
 class App extends Component {
   render() {
@@ -12,7 +13,14 @@ class App extends Component {
         <p>{message}</p>
         <Student rollno={100} name="Sanjay" initialmark={60} increment={10}/>
         <Student rollno={101} name="Sunil" initialmark={25} increment={20}/>
-        <RoutingDemo />
+
+        {/* <BrowserRouter>
+          <div>
+            <Route path='/' component={Home}>Home</Route>
+            <Route path='/about' component={About}>About</Route>
+          </div>
+        </BrowserRouter> */}
+
       </div>
     );
   }
