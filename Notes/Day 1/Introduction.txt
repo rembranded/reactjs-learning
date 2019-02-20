@@ -3,3 +3,6 @@ JS library for user applications
 Component based and fast in updating the DOM
 
 Use a transpiler like Babel or Traceur to translate ES6 code (which React is based on) into current-gen code that browsers support
+
+To run the app, use 
+npm start

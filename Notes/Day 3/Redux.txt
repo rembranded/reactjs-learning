@@ -1,0 +1,13 @@
+Redux is a state management library for ReactJS
+
+It maintains a store where the states of the elements are maintainted. This store is immutable i.e. any changes being made are creating new objects.
+
+The initial state is defined in the store, and any action being made on the state to change it, will create a new object.
+
+Any action to be performed is sent to the reducers, which are pure JS functions which recieve inputs as a JS object (POJO - Plain Old JavaScript Object). Reducers always return a state after performing an action. If the new state doesn't exist, then the current state itself is returned
+
+PRINCIPLES OF REDUX:
+--------------------
+1. Single store of truth - only 1 large object tree containing all the states of the elements
+2. State is read-only - Immutable states are modified by emitting an action
+3. Changes are made with pure functions - Reducers are used to make changes to the state tree

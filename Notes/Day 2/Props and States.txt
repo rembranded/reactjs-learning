@@ -1,0 +1,27 @@
+PROPS:
+------
+
+Inputs from a component to a Parent
+
+Accessed using {this.props.name}
+
+Props are immutable, i.e. the components cannot modify the props.
+All React components are pure functions w.r.t. Props
+
+STATES:
+-------
+
+States are mutable, and therefore can be changed
+Can only be used with class components and not functions
+
+1) Do not modify the state directly
+If a value is assigned to a state directly, the render function is not recalled. i.e. the value of the state changes, but this is not reflected on the UI.
+The recommended way to modify the state of an object is to use the setState() function. This will also re-render the UI.
+
+2) State updates may be asynchronous
+State changes are asynchronous, therefore the change in state may not happen or reflect instantly.
+If the setState has to be done on the basis of a previous stage, then use the previousState() function
+
+3) State updates are merged
+State can be changed per individual entity despite being grouped in a constructor or a class.
+If only one attribute is changed by setState(), then only that attribute is merged back into the overall larger entity

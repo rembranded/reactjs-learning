@@ -1,0 +1,9 @@
+HIGHER ORDER COMPONENTS:
+------------------------
+
+Component - Transforms props into UI
+HoC - A function that transforms a comp into another comp
+
+EVENT HANDLERS:
+---------------
+
