@@ -1,0 +1,181 @@
+ReactJS Training
+--------------------
+
+Software requirement
+----------------------
+1. NodeJS (JS runtime)
+2. Visual Studio Code (Open source IDE)
+3. npm - to install required packages
+
+
+cmd prompt > node -v
+cmd prompt > code
+cmd prompt > npm i -g create-react-app
+
+\\10.237.3.16\training$\Type script\React\DateTime
+
+Agenda
+--------
+Introduction to React
+React Vs others
+Setting up the environment
+NodeJS - A quick introduction (npm commands for managing dependencies)
+ES6 new features - A walk-through
+JSX 
+Components 
+   a. Functional Components - stateless
+   b. Class components - stateful
+
+Props(immnutable) and state(mutable)
+List & keys
+Higher order Components(HoC)
+Routing - SPA
+Using axios to make HTTP calls
+Forms - Controlled and Uncontrolled
+Using Redux for state management
+Unit testing
+
+React - An Introduction
+--------------------------
+JS library for creating User interfaces
+"V" in MVC
+Component-based
+Fast - Virtual DOM
+
+First React application
+-----------------------
+npm i -g create-react-app
+create-react-app myapp
+cd myapp
+npm start
+
+Chrome extensions
+------------------
+react-detector
+react-devtools
+redux-devtools
+
+ES6
+----------
+ECMAScript2015 
+European Computer Manufacturers Association
+Modern browsers - ES5 (JSON, use strict)
+Rolling standard - new release every year
+
+ES6 - ES2015
+ES7 - ES2016 (** operator, Array.prototype.includes)
+ES8 - ES2017 (async-await)
+ES9 - ES2018
+
+Transpiler - compiles next-gen JS into browser compatible JS
+Ex) Babel, TraceUr, typescript
+
+ES6 - New features
+-----------------------
+1. Lexical binding with let and const 
+	Block-scoped variables
+	not hoisted
+	
+2. Arrow functions
+	setInterval(()=>console.log(new Date().toLocaleString(),1000);
+	let b = a.map(item=>item*2);
+
+3. Default args
+	function add(a,b=10){
+    		console.log(a+b);
+	}
+	add(10);   // 20
+	add(10,20)  //30
+
+4. Rest and Spread
+	
+5. classes and objects
+	class Employee{
+		constructor(id,name){
+			this.id=id;
+			this.name=name;
+		}
+		display(){
+			console.log(`Id = ${this.id} Name = ${this.name}`);
+		}
+	}
+	class Manager extends Employee{
+    		constructor(id,name,projectid){
+        		super(id,name);
+        		this.projectid=projectid;
+    		}
+    		display(){
+            		super.display();
+            		console.log("Project Id "+this.projectid);
+    		}
+	}
+	let mgr=new Manager(2,'Akash',101);
+	mgr.display();
+
+6. Template literals
+	Backticks  ` `
+	variable substituition
+	string across multiple lines
+
+7. for..of loop
+	for(let item of arr)
+		console.log(item);
+
+8. Array and object destructuring
+	let arr=[10,20,30];
+	let [a1,a2]=arr;
+
+	let obj={key1:10, key2: 20, key3:30, key4:40};
+	let {key1:c,key4:d}=obj;
+		(or)
+	let c=obj.key1, d=obj.key2;
+
+	let {key1,key4}=obj;
+		(or)
+	let key1=obj.key1, key4=obj.key4;
+
+	
+9. Modules
+ 	calc.js
+		export function add(a,b){
+			return a+b;
+		}
+		function sub(a,b){
+			return a-b;
+		}
+		export default sub;
+	testcalc.js
+		import sub,{add} from './calc';
+		sub(4,2);
+		add(2,2);
+
+   npm i esm
+   nodemon -r esm testcalc.js
+
+**************************************END OF ES6 New features**************************
+
+create-react-app
+	webpack - module loader
+	babel - transpiler
+
+npm commands
+	npm install boostrap -save
+	npm install jest --save-dev
+	npm uninstall bootstrap	
+	npm update bootstrap@latest
+	npm ls
+	npm search jasmine
+	npm install   //installs all packages in package.json
+	npm install -only=prod  //installs only prod dep in package.json
+	npm install -only=dev   //installs only dev dep in package.json
+
+	To run the scripts
+		npm start
+		npm run build
+	
+	
+Simple React components
+	ReactDOM.render(<h1>Hello World!!!</h1>,document.getElementById("root"))
+	
+
+
