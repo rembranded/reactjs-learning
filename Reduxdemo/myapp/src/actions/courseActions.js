@@ -1,0 +1,15 @@
+
+export function createCourse(course) {
+    return({
+        type:"CREATE_COURSE",
+        course:course
+    });
+}
+
+export function removeCourse(course) {
+    return({
+        type:"REMOVE_COURSE",
+        course:course
+    });
+}
+
